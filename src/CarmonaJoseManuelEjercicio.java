@@ -2,19 +2,21 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class CarmonaJoseManuelEjercicio {
-    static void main() {
+
+    public static void main(String[] args) {
+
         Scanner input = new Scanner(System.in);
         Random random = new Random();
 
-        // ===== GENERAR PREMIOS =====
+        // Generar Premios =====
         String premio1 = String.format("%05d", random.nextInt(99999) + 1);
         String premio2 = String.format("%05d", random.nextInt(99999) + 1);
         String premio3 = String.format("%05d", random.nextInt(99999) + 1);
         String cuarto1 = String.format("%05d", random.nextInt(99999) + 1);
         String cuarto2 = String.format("%05d", random.nextInt(99999) + 1);
-
+        // Generar reintegro
         String reintegro = premio1.substring(4);
-
+        // Menu Principal
         int opcion = -1;
 
         while (opcion != 0) {
@@ -36,7 +38,7 @@ public class CarmonaJoseManuelEjercicio {
             switch (opcion) {
 
                 case 1:
-
+                    // Comprobacion de numero valido
                     int numero = 0;
                     boolean numeroValido = false;
 
@@ -58,7 +60,7 @@ public class CarmonaJoseManuelEjercicio {
                             input.next();
                         }
                     }
-
+                    // Comprobación de importe
                     int importe = 0;
                     boolean importeValido = false;
 
@@ -80,7 +82,7 @@ public class CarmonaJoseManuelEjercicio {
                             input.next();
                         }
                     }
-
+                    // Tipos de premio
                     String decimo = String.format("%05d", numero);
                     String tipoPremio = "";
 
