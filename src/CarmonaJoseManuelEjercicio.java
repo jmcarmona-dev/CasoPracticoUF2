@@ -8,7 +8,7 @@ public class CarmonaJoseManuelEjercicio {
         Scanner input = new Scanner(System.in);
         Random random = new Random();
 
-        // Generar Premios
+        // Generar premios
         String premio1 = String.format("%05d", random.nextInt(99999) + 1);
         String premio2 = String.format("%05d", random.nextInt(99999) + 1);
         String premio3 = String.format("%05d", random.nextInt(99999) + 1);
