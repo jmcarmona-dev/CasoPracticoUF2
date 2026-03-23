@@ -47,6 +47,17 @@ public class Menu {
         this.sorpresa = sorpresa;
     }
 
-
-
+    // Calcular el total
+    public double calcularTotal() {
+        return precioPlato + precioComplemento + precioPostre + precioBebida;
+    }
+    // Mostrar resumen
+    public void mostrarResumen() {
+        System.out.println("Plato principal: " + platoPrincipal + " " + precioPlato + "€");
+        System.out.println("Complemento: " + complemento + " " + precioComplemento + "€");
+        System.out.println("Postre: " + postre + " " + precioPostre + "€");
+        System.out.println("Bebida: " + bebida + " " + precioBebida + "€");
+        System.out.println("Sorpresa: " + sorpresa);
+        System.out.println("----- Total: " + calcularTotal() + "€");
+    }
 }
