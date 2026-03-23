@@ -140,7 +140,7 @@ public class Main {
         }
     }
 
-    // Sorpresa aleatoria
+    // Sorpresa random
     public static void generarSorpresa(Menu menu) {
 
         String[] sorpresas = {"Chuches", "Libro", "Juguete"};
