@@ -60,4 +60,5 @@ public class Menu {
         System.out.println("Sorpresa: " + sorpresa);
         System.out.println("----- Total: " + calcularTotal() + "€");
     }
+
 }
