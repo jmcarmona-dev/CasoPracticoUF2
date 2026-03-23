@@ -51,7 +51,7 @@ public class Menu {
     public double calcularTotal() {
         return precioPlato + precioComplemento + precioPostre + precioBebida;
     }
-    // Mostrar resumen
+    // Mostrar resumenn
     public void mostrarResumen() {
         System.out.println("Plato principal: " + platoPrincipal + " " + precioPlato + "€");
         System.out.println("Complemento: " + complemento + " " + precioComplemento + "€");
